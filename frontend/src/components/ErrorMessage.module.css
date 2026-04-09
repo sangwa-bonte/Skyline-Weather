@@ -1,0 +1,17 @@
+.error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(252, 129, 129, 0.06);
+  border: 1px solid rgba(252, 129, 129, 0.2);
+  border-radius: 14px;
+  padding: 16px 20px;
+  color: var(--temp-hot);
+  font-size: 0.9rem;
+  animation: fadeUp 0.3s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

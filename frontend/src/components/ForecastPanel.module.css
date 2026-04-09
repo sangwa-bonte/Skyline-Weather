@@ -1,0 +1,93 @@
+.panel {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 24px;
+  padding: 28px;
+  backdrop-filter: blur(20px);
+  animation: fadeUp 0.5s 0.1s ease both;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.day {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-glass);
+  border-radius: 14px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: fadeUp 0.4s ease both;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: default;
+}
+
+.day:hover {
+  background: var(--bg-glass-hover);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.dayName {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+}
+
+.dayDate {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.emoji {
+  font-size: 1.6rem;
+  margin: 2px 0;
+}
+
+.temps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.maxTemp {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.minTemp {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.rain {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--accent-sky);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
