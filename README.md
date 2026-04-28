@@ -2,7 +2,7 @@
 
 A full-stack weather application built with **FastAPI**, **MongoDB**, and **React**. Uses the **weather.gov API** (completely free, no API key required) for weather data, and **Open-Meteo geocoding** to resolve city names to coordinates.
 
-> ⚠️ **weather.gov only covers US cities.** Searching for cities outside the United States will return a clear error message.
+> ⚠️ **Skyline weather only covers US cities.** Searching for cities outside the United States will return a clear error message.
 
 ---
 
