@@ -40,7 +40,7 @@ City name
    → weather.gov /points/{lat},{lon} → grid metadata + station list
    → Nearest observation station → current weather & forecast
 ```
-
+ 
 No API keys needed anywhere in this flow.
 
 ---
